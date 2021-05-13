@@ -153,3 +153,16 @@ footer p{
 #temp,.fa,.fas{
     font-size: 3rem;
 }
+
+
+@media screen and (max-width:500px){
+    .top{
+        text-align:center;
+        width:80%;
+    }
+    
+    
+    .main{
+        width:80%;
+    }
+}

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js"
+    "start": "nodemon src/app.js -w hbs,js,html,css"
   },
   "author": "shubham sutar",
   "license": "ISC",
