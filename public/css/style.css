@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+:root{
+    --main-bg:#1e272e;
+    --main-color:#0097e6;
+}
+
+html{
+    font-size:62.5%;
+}
+body{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+}
+.row{
+    margin:0;
+}
+
+.main_menu{
+    background-color:var(--main-bg);
+}
+
+.navbar{
+    color:#fff;
+    background-color:var(--main-color);
+    padding:2rem 0;
+}
+.navbar li a{
+    margin-left:20px;
+}
+.navbar a{
+    color:#fff;
+    font-size:1.8rem;
+}
+/* main header */
+
+.main_header_left{
+    height:50rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main_header_left p{
+    font-size:2rem;
+}
+.main_header_left h1{
+    font-size:4rem;
+    margin : 1rem 0 4rem 0;
+    text-transform:capitalize;
+}
+.main_header_left .text-clr{
+    color:var(--main-color);
+}
+.main_header_left button{
+    border:none;
+    padding:0.8rem 1.8rem;
+    font-size:1.4rem;
+    border-radius:2rem;
+    text-transform:uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    outline:none;
+}
+.main_header_left button{
+    box-shadow: 0 8px 6px -6px var(var(--main-color));
+}
+.main_header_right{
+    height:50rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* footer */
+
+footer{
+    width:100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+}
+
+footer p{
+    margin:0;
+    text-align:center;
+    color:#fff;
+    font-size:1.4rem;
+    line-height:5rem;
+}
+
+
+/* weather style */
+
+.main_content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tempInfo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:50px;
+    border-radius: 1rem;
+}
+
+.top{
+    border-radius: 1rem;
+    padding:2rem;
+    width:20%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #5e8caf;
+}
+
+#day{
+    text-align:left;
+    font-size:2rem;
+    display: inline-block; 
+}
+#data{
+    text-align:right;
+    font-size:2rem;
+    display: inline-block;
+}
+
+
+.main{
+    border-radius: 1rem;
+    padding:2rem;
+    width:20%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #424e57;
+    color:#fff;
+}
+
+.middle{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#temp,.fa,.fas{
+    font-size: 3rem;
+}

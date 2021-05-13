@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>head}}
+</head>
+
+<body>
+    {{>menu}}
+
+    <!-- mainn header -->
+
+
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+
+                <div class="main_content mt-4">
+                    <form action="" class="temp_form">
+                        <div class="input-group">
+                            <input type="text" name="" class="form-control" id="cityName"
+                                placeholder="Enter Your City Name" autocomplete="off">
+                            <div class="input-group-append">
+                                <input type="button" class="btn btn-info" value="Search" id="submitBtn">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="tempInfo">
+                    <div class="top">
+                        <p id="day">
+                            Tuesday
+                        </p>
+                        <p id="data">
+                            13 OCT
+                        </p>
+                    </div>
+                    <div class="main">
+                        <p id="city">
+                            Get Output
+                        </p>
+                        <div class="data_hide middle">
+                            <p id="temp"><span>0</span><sup>0</sup></p>
+                            <p id="status"><i class="fa fa-cloud"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    {{>footer}}
+    <script src="js/script.js"></script>
+    <script>
+        const getcday = () => {
+            let ctime = new Date();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            let day = document.getElementById("day");
+
+            var n = weekday[ctime.getDay()];
+            console.log(n);
+            return n;
+            day.innerText = n;
+        };
+        getcday();
+    </script>
+
+</body>
+
+</html>
