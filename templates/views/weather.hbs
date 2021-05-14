@@ -63,12 +63,33 @@
             weekday[4] = "Thursday";
             weekday[5] = "Friday";
             weekday[6] = "Saturday";
+
+            var months = new Array(12);
+            months[0] = "JAN";
+            months[1] = "FEB";
+            months[2] = "MAR";
+            months[3] = "APR";
+            months[4] = "MAY";
+            months[5] = "JUN";
+            months[6] = "JUL";
+            months[7] = "AUG";
+            months[8] = "SEP";
+            months[9] = "OCT";
+            months[10] = "NOV";
+            months[11] = "DEC";
             let day = document.getElementById("day");
+            let data = document.getElementById("data");
 
             var n = weekday[ctime.getDay()];
+            var l = ctime.getDate();
+            var m = months[ctime.getMonth()];
             console.log(n);
-            return n;
+            console.log(l);
+            console.log(m);
             day.innerText = n;
+            var date1 = l + " " + m;
+            data.innerText = date1;
+            return n;
         };
         getcday();
     </script>
